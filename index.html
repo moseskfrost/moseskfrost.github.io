@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Moses K. Frost</title>
+        <link rel="icon" type="image/x-icon" href="images/logo_sq.png"> <!---Convert to .svg-->
+        <style>
+            header {background-image:url("images/Typewriter.png")}
+            #contact-me {display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); z-index:2; width:500px; border:1.5px solid #FFBF60; border-radius:15px; background-color:#00000080; backdrop-filter:blur(25px); -webkit-backdrop-filter:blur(25px); box-shadow:0px 0px 25px #00000040; padding:15px}
+            #contact-me:target {display:block}
+            #in-contact-me {margin-top:15px; border:1.5px solid #FFBF6080; border-radius:5px; background-color:#00000080; padding:10px}
+        </style>
+    </head>
+    <body>
+        <header>
+        </header>
+        <nav>
+            <input type="checkbox" title="Navigate" id="navigate">
+            <img src="images/logo.png" alt="Logo" style="width:75px"> <!---Convert to .svg-->
+            <div id="nav-links">
+                <a id="active-page">About Me</a>
+                <a href="amateur-radio.html">Amateur Radio</a>
+                <a href="music.html">Music</a>
+            </div>
+            <button onclick="location.href='#contact-me'">Contact Me</button>
+        </nav>
+        <div id="contact-me">
+            <p onclick="history.back()" id="close">⬤</p>
+            <h1>Contact Information</h1>
+            <div id="in-contact-me">
+                <small style="float:right">Use the link, should the button not function.</small>
+                <h2>Moses K. Frost</h2>
+                <p>E-mail&thinsp;:&nbsp; &lt;<a href="mailto:moseskfrost@outlook.com">moseskfrost@outlook.com</a>&gt;</p>
+                <p>Social media&thinsp;:&nbsp; &lt;@moseskfrost&gt;</p>
+            </div>
+            <div id="in-contact-me">
+                <button onclick="location.href='mailto:moseskfrost@outlook.com'" style="float:right">E-Mail</button>
+                <h2>Contact Me</h2>
+                <p style="text-align:justify">I usually respond to electronic mails within twelve hours.&nbsp; Fail I do so, I am also available on various social media platforms at username &lt;@moseskfrost&gt;.</p>
+            </div>
+        </div>
+        <main>
+            <section>
+                <div style="margin-right:50px" id="in-section">
+                    <p>Greetings.&nbsp; My name is Moses K. Frost, and I attend Thorildsplans Gymnasium, studying <i>Information Technology and Data.</i></p>
+                    <p>&bull; I am a <a href="amateur-radio.html">Morse Telegrapher</a>, on-path to acquiring Amateur Radio certification,</p>
+                    <p>&bull; and an aspiring <a href="music.html">organist</a>, playing pipe organs in various Churches&mdash;mainly the German Church of Stockholm.</p>
+                    <p>&emsp;At a young age, I discovered my talent for learning scripts, and have had quite fun with that.&nbsp; I know Arabic, Cyrillic, and Greek&thinsp;; Morse, Braille, and sign language.</p>
+                    <p>&emsp;I started playing the piano when I was little, and have had an interest ever since.&nbsp; I took piano classes once, though those mostly turned out as language courses.&nbsp; Nowadays, I amateurely study to become a Church organist.</p>
+                </div>
+                <img src="images/Moses.jpg" alt="Moses playing Düben-Orgel." id="picture">
+            </section>
+        </main>
+        <footer>
+            <h2>Moses K. Frost</h2>
+            <p>moseskfrost@outlook.com &bullet; @moseskfrost</p>
+        </footer>
+    </body>
+</html>
